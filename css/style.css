@@ -594,8 +594,8 @@ body{
 
 #coffee{
     padding-top: 168px;
-    padding-left: 85px;
-    padding-right: 85px;
+    padding-left: 85px !important;
+    padding-right: 85px !important;
 }
 
 .coffee__list{
@@ -653,6 +653,7 @@ body{
 
 .coffee__accordion{
     list-style: none;
+    /* margin-right: 0 !important; */
 }
 
 .accordion__item{
@@ -664,7 +665,7 @@ body{
     cursor: pointer;
 }
 
-.accordion__item:not(:last-child){
+.accordion__item{
     margin-bottom: 88px;
 }
 
@@ -675,6 +676,33 @@ body{
 
 .accordion__item:hover .bx{
     color: #66d2cf;
+}
+
+.accordion__end{
+    background-color: #2c343e;
+    border-radius: 10px;
+    padding: 47px 64px;
+}
+
+.accordion-end__intro{
+    font-size: 16px;
+    line-height: 26px;
+    text-transform: uppercase;
+    color: #fff;
+    opacity: 0.5;
+    margin-bottom: 8px;
+}
+
+.accordion-end__text{
+    font-family: 'Fraunces';
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 40px;
+    color: #fff;
+}
+
+.accordion-end__green{
+    color: #0e8784;
 }
 
 /* RESPONSIVE START */
