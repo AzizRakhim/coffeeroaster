@@ -542,6 +542,141 @@ body{
     padding-top: 168px;
 }
 
+/* SUBSCRIBE-INTRO START */
+
+.subscribe{
+    padding-bottom: 168px;
+}
+
+.subscribe-intro{
+    background-image: url('/images/subscribe-bg.png');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    padding: 134px 0 134px 85px;
+}
+
+.subscribe__title{
+    font-family: 'Fraunces';
+    font-weight: 900;
+    font-size: 72px;
+    line-height: 72px;
+    color: #fefcf7;
+    margin-bottom: 32px;
+}
+
+.subscribe__text{
+    max-width: 445px;
+}
+
+/* SUBSCRIBES END */
+/* NUMBERS START */
+
+.number-wrapper{
+    background-color: #2c343e;
+    padding: 115px 0 100px;
+}
+
+.num-dot{
+    background-color: #2c343e;
+}
+
+.num-title{
+    color: #fefcf7;
+}
+
+.num-text{
+    color: #fefcf7;
+    margin-bottom: 0;
+}
+
+/* COFFEE START */
+
+#coffee{
+    padding-top: 168px;
+    padding-left: 85px;
+    padding-right: 85px;
+}
+
+.coffee__list{
+    list-style: none;
+}
+
+.coffee__item{
+    padding: 0 0 24px 0;
+}
+
+.coffee__item:not(:last-child)::after{
+    content: "";
+    width: 255px;
+    height: 1px;
+    display: block;
+    background: #83888f;
+    opacity: 0.25;
+    margin-top: 24px;
+}
+
+.coffee__item:hover .coffee__link{
+    color: #333d4b;
+    opacity: 1;
+}
+
+.coffee__item:hover .coffee__num{
+    color: #0e8784;
+    transition: all 0.4s ease;
+}
+
+.coffee__link{
+    font-family: 'Fraunces';
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 32px;
+    color: #333d4b;
+    opacity: 0.4;
+    text-decoration: none;
+    transition: all 0.4s ease;
+}
+
+.coffee__num{
+    display: inline-block;
+    margin-right: 29px;
+    color: #83888f;
+}
+
+.coffee__link--active{
+    opacity: 1;
+}
+
+.coffee__num--active{
+    color: #0e8784;
+}
+
+.coffee__accordion{
+    list-style: none;
+}
+
+.accordion__item{
+    font-family: 'Fraunces';
+    font-weight: 900;
+    font-size: 40px;
+    line-height: 48px;
+    color: #83888f;
+    cursor: pointer;
+}
+
+.accordion__item:not(:last-child){
+    margin-bottom: 88px;
+}
+
+.bx-chevron-down{
+    color:  #0e8784;
+    transition: all 0.4s ease;
+}
+
+.accordion__item:hover .bx{
+    color: #66d2cf;
+}
+
 /* RESPONSIVE START */
 
 @media screen and (max-width: 992px) {
@@ -785,6 +920,54 @@ body{
     .quality__img-box{
         display: none !important;
     }   
+
+    /* QUALITY END */
+    /* SUBSCRIBE-INTRO START */
+
+    .subscribe-intro{
+        border-radius: 10px;
+        padding: 127px 0 126px 58px;    
+    }
+
+    .subscribe__text{
+        max-width: 398px;
+        font-size: 15px;
+        line-height: 25px;
+    }
+
+    .subscribe__title{
+        font-size: 48px;
+        line-height: 48px;
+        margin-bottom: 24px;
+    }
+
+    /* SUBSCRIBE END */
+    /* NUMBERS START */
+
+    .number-wrapper{
+        padding: 112px 0 70px;
+    }
+
+    .num-how{
+        margin-left: 40px;
+    }  
+
+    /* NUMBERS END */
+    /* COFFEE START */
+
+    #coffee{
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .coffee__list{
+        display: none;
+    }
+
+    .accordion__item{
+        font-size: 32px;
+        line-height: 48px;
+    }
 }
 
 @media screen and (max-width: 768px) {
@@ -902,6 +1085,39 @@ body{
         background-position: center center;
         border-radius: 10px;
     }
+
+    /* QUALITY END */
+    /* NUMBERS START */
+
+    .number-wrapper{
+        padding: 80px 24px;
+    }
+
+    .num-how{
+        margin-left: 0;
+    }
+
+    .num-num{
+        width: 100%;
+    }
+
+    .num-item-title{
+        width: 100%;
+    }
+
+    .num-text{
+        width: 100%;
+    }
+
+    /* NUMBER END */
+    /* COFFEE START */
+
+    .accordion__item{
+        font-size: 24px;
+        line-height: 28px;  
+    }
+
+}
 
 @media screen and (max-width: 576px){
     .header__img{
@@ -1079,5 +1295,22 @@ body{
 
     .quality__title{
         width: 100%;
+    }
+
+    /* QUALITY END */
+    /* SUBSCRIBE START */
+
+    .subscribe-intro{
+        padding: 101px 24px 136px;
+    }
+
+    .subscribe__wrapper{
+        text-align: center;
+    }
+
+    .subscribe__title{
+        font-size: 40px;
+        line-height: 40px;
+        margin-bottom: 22px;
     }
 }
